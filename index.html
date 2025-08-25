@@ -8,8 +8,9 @@
   </head>
   <body>
     <!--Nav-->
-    <nav class="nav-container">
-      <div>
+      <div class="container">
+        <nav class="nav-container">
+      <div class="nav-list1">
         <ul class="nav-list">
           <li>PRODUCT</li>
           <li>SHOP</li>
@@ -20,6 +21,7 @@
       <div>
         <p class="nav-twinkle">TWINKLE SPARKLES</p>
       </div>
+
       <div>
         <ul class="nav-list">
           <li>BLOG</li>
@@ -27,7 +29,26 @@
           <li>NEW STOCK</li>
         </ul>
       </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <img src="Asset/hamburger.svg" alt="hamburger-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </nav>
+
+     <script>
+      function toggleMenu(){
+        document.querySelectorAll('.nav-list').forEach(list=>{
+          list.classList.toggle('active')
+        })
+      }
+     </script>
+   
 
     <!--frist section-->
     <section class="hero">
@@ -41,14 +62,12 @@
         </p>
         <button class="btn">SHOP NOW</button>
       </div>
-      <div class="hero-image">
-        <img src="Asset/Rectangle 14.png" alt="A lady body"/>
-      </div>
+      
+      <div><img class="hero-image" src="Asset/Rectangle 14.png" alt="A lady body" height="688px" width="600px"/></div>
     </section>
 
     <!--second section-->
-    <section class="feature-box">
-      
+    <section class="feature-box"> 
       <div class="box">
       <img src="Asset/Ring img.webp" />
         <p class="Box-unique">Unique <br />Collection</p>
@@ -68,44 +87,54 @@
     </section>
 
        <!--Third section-->
-       <section class="grid-container">
-        <div class="item grid-1">
-
-            <img src="Asset/A female finger.webp" height="608px" width="640px"/> 
+       <section class="product-highlight">
+        <!-- grid contain 1 -->
+        <div class="grid-contain">
+        <div class="item grid-description">
+            <img src="Asset/A female finger.webp" height="608px" width="550px"/> 
+            <img class="line" src="./Asset/Rectangle 20.png" alt="line">
         </div>
+          
         <div class="item grid-2">
           <p class="grid-text1">Best Collections</p>
-        <hr />
-        <p class="grid-text2">Jewelry Shop</p>
-
-        <p class="grid-text3">5+ratings</p>
-        <p class="grid-text4">
+          <p class="grid-text2">Jewelry Shop</p>
+          <p class="grid-text3">5+ratings</p>
+          <p class="grid-text4">
           Stunning designs,top notch quality,and incredible customer services.
-        </p>
-        <button class="btn2">SHOP NOW</button>
+            </p>
+          <button class="btn2">SHOP NOW</button>
+        </div>
+
+      </div>
+      
+         <!-- Grid contain 2 -->
+       <div class="grid-contain1">
+        <div class="item grid-description1">
+            <img src="Asset/female necklace.webp" height="608px" width="550px"/> 
+            <img class="line" src="./Asset/Rectangle 20.png" alt="line">
+        </div>
+          
+        <div class="flex-2">
+          <p class="item-grid2">100% Gold</p>
+          <p class="item-grid3">Unity Products</p>
+          <p class="item-grid4"> Let’s help you design interconnected hearts that symbolize 
+            the connection between you and your loved one. </p>
+          <button class="btn3">SHOP NOW</button>
+        </div>
       </div>
 
-        <div class="item grid-3">
-          <p class="item-Gold">100% Gold</p>
-          <p class="item-unity">Unity Products</p>
-        <p class="item-grid-text">
-          Let's help you design interconnected hearts that symbolize the
-          connection between you and your loved one.
-        </p>
-        <button class="btn3">SHOP NOW</button>
-        </div>
-
-        <div class="item grid-4">
-          <img src="Asset/female necklace.webp" height="608px" width="639px"/>
-        </div>
+       <div class="grid-contain2">
         <div class="item grid-5">
-          <img src="Asset/Necklace.webp"height="608px" width="640px" />
+          <img src="Asset/Necklace.webp" height="608px" width="550px"/>
+           <!-- <img class="line" src="./Asset/Rectangle 20.png" alt="line"> -->
         </div>
+        
         <div class="item grid-6">
           <p class="text-sparkilng">Trendy Sparkling</p>
         <p class="text-cluster">Cluster</p>
         <p class="text-twinkle">Experience the Twinkle Sparkles Difference</p>
         <button class="btn4">SHOP NOW</button>
+        </div>
         </div>
        </section>
 
@@ -136,8 +165,8 @@
      </section>
         
     <!---footer-->
-   <footer >
-      <div class="footer">
+   <footer class="footer">
+      <div>
         <h4 class="footer-text1">What our customers say</h4>
         <p class="footer-text2">We value our customer's feedback.</p>
       </div>
@@ -159,7 +188,25 @@
            </div>
       </div>
      </div>
+     <div class="footer-newsletter">
+      <p>Subscribe our newsletter</p>
+     </div>
+     <div class="footer-email">
+      <P class="footer-email1">Enter your email</P>
+      <button class="footer-btn">Subscribe</button>
+     </div>
+     <div  class="footer-email img">
+     <img src="Asset/Rectangle 30 (1).png">
+     </div>
+     <div class="footer-twinkle">
+      <p class="footer-twinkle1">TWINKLE SPARKLES</p>
+      <div class="footer-twinkle2">
+        <img src="Asset/instagram (1).webp" width="50px">
+        <img src="Asset/facebook.webp" width="41.67px">
+        <img src="Asset/twitter.webp" width="50px">
+      </div>
+     </div>
     </footer>
-
+</div>
   </body>
 </html>
